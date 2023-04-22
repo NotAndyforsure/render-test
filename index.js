@@ -134,5 +134,5 @@ if(!nameFind){
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
-  console.log("server is running on http://localhost:3001/ successfully");
+  console.log(`server is running on port ${PORT} successfully`);
 })
