@@ -46,7 +46,7 @@ const home =  `
 
 
 app.get("/", (request, response) => {
-  response.send(home);
+  response.send("index.html");
 });
 
 
