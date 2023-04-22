@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm test",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf build && cd ~/repos/fsopen/fs-parttwo/twopsix && npm run build && cp -r build ~/repos/fsopen/fs-partthree/threepone",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "",
   "license": "ISC",
